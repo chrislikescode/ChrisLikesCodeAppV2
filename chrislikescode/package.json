@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy-production": "next build && scp -i ../ChrisLikesCodeKey -r ./build/* chris@143.244.182.3:/var/www/html/chrislikescode.com/html"
+    "export": "npm run build && next export -o _static"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.14",
